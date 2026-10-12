@@ -22,7 +22,7 @@
 'use strict';
 // Viitoare integrare (DEZACTIVATĂ): Cloudflare Worker -> OpenAI API.
 // Pentru versiunea actuală nu există cereri de rețea și nu se folosește cheia API.
-const FUTURE_WORKER_URL = 'WORKER_URL_AICI';
+const FUTURE_WORKER_URL = 'https://cardioproxy.mihaibota64.workers.dev/';
 const questions = [
  {key:'age',category:'Date generale',title:'Care este grupa ta de vârstă?',hint:'Vârsta influențează riscul cardiovascular, dar nu îl determină singură.',options:[['Sub 35 de ani',0],['35–44 de ani',1],['45–59 de ani',2],['60 de ani sau peste',3]]},
  {key:'bp',category:'Indicatori de sănătate',title:'Cum este, de regulă, tensiunea ta arterială?',hint:'Alege pe baza măsurătorilor repetate, dacă le cunoști. Este suficient ca una dintre valori să fie în intervalul superior.',options:[['Sub 120/80 mmHg',0],['120–139 sistolică sau 80–89 diastolică',1],['140–159 sistolică sau 90–99 diastolică',2],['160 sau mai mult sistolică ori 100 sau mai mult diastolică',3],['Nu știu / nu am măsurat recent',1]]},
