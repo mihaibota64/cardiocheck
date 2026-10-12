@@ -7,21 +7,28 @@
 <title>CardioCheck · Autoevaluare educativă</title>
 <style>
 :root{--ink:#14223d;--muted:#5d6d83;--line:#e0e7ef;--blue:#2459c7;--bg:#f6f8fb;--green:#12734b;--amber:#996500;--red:#b43140}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#e5eefc 0,transparent 40%),var(--bg);font:16px/1.55 system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink)}button{font:inherit;cursor:pointer}button:focus-visible{outline:3px solid #79a3ed;outline-offset:3px}.wrap{max-width:920px;margin:auto;padding:34px 20px 65px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:38px}.logo{display:flex;align-items:center;gap:10px;font-weight:850;font-size:19px;letter-spacing:-.6px}.logoicon{background:#1f5ccb;color:#fff;border-radius:14px;width:40px;height:40px;display:grid;place-items:center;font-size:24px}.pill{font-size:12px;background:#e9eef9;border:1px solid #dce5f8;color:#32578c;padding:6px 11px;border-radius:50px;font-weight:750}.hero h1{font-size:clamp(31px,5vw,48px);line-height:1.13;letter-spacing:-1.6px;margin:0 0 14px;max-width:740px}.hero h1 em{font-style:normal;color:var(--blue)}.hero p{color:var(--muted);max-width:680px;font-size:17px;margin:0 0 25px}.panel{background:white;border:1px solid var(--line);border-radius:24px;box-shadow:0 16px 45px #263d6110;padding:clamp(22px,4vw,40px)}.progresshead{display:flex;justify-content:space-between;gap:15px;align-items:center;font-size:13px;font-weight:750;color:var(--muted)}.progress{height:9px;background:#e9eef5;border-radius:99px;overflow:hidden;margin:12px 0 30px}.progress>div{height:100%;width:0;background:linear-gradient(90deg,#2f6bd9,#3da9af);border-radius:99px;transition:width .25s}.tag{font-size:12px;text-transform:uppercase;letter-spacing:1.4px;color:var(--blue);font-weight:850}.question{font-size:clamp(23px,3.6vw,30px);font-weight:800;letter-spacing:-.7px;margin:8px 0}.hint{color:var(--muted);margin:0 0 22px;font-size:14px}.options{display:grid;gap:11px}.option{display:flex;align-items:center;gap:13px;text-align:left;width:100%;background:#fff;border:1.5px solid var(--line);border-radius:13px;padding:15px;transition:background .15s,border-color .15s}.option:hover{border-color:#87a9e8;background:#f7faff}.option.selected{background:#eef4ff;border:2px solid #3472dd;padding:14.5px}.bubble{flex:none;width:22px;height:22px;border:2px solid #b0bfd2;border-radius:50%;display:grid;place-items:center}.selected .bubble{border-color:var(--blue)}.selected .bubble:after{content:'';width:10px;height:10px;border-radius:50%;background:var(--blue)}.nav{display:flex;gap:12px;justify-content:space-between;align-items:center;margin-top:28px}.btn{border:0;border-radius:11px;padding:12px 23px;font-weight:800;min-height:46px}.btn.primary{background:var(--blue);color:white}.btn.primary:hover{background:#19489e}.btn.secondary{background:#f1f4f8;color:#334a6a}.btn:disabled{opacity:.45;cursor:not-allowed}.note{display:flex;align-items:flex-start;gap:11px;background:#fff8e9;border:1px solid #efdfb8;border-radius:15px;padding:16px;margin-top:20px;color:#73561e;font-size:13px}.note strong{color:#624412}.hidden{display:none!important}.resultheader{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.scorecircle{width:124px;height:124px;border-radius:50%;display:grid;place-items:center;align-content:center;border:10px solid currentColor;flex:none}.scorecircle strong{font-size:36px;line-height:1.1}.scorecircle small{font-size:11px}.resultbox{border-radius:17px;padding:22px;display:flex;align-items:center;gap:22px;margin:25px 0}.resultbox.low{background:#eaf7f0;color:var(--green)}.resultbox.medium{background:#fff5dd;color:var(--amber)}.resultbox.high{background:#fff0f0;color:var(--red)}.resultbox h2{font-size:27px;margin:4px 0}.resultbox p{margin:0;color:#47566c;font-size:14px}.eyebrow{font-size:11px;letter-spacing:1.1px;text-transform:uppercase;font-weight:850}.sectiontitle{font-size:21px;letter-spacing:-.4px;margin:28px 0 8px}.recommendations{display:grid;gap:10px;margin:15px 0}.rec{padding:17px 19px;background:#f6f8fc;border:1px solid #e6ebf2;border-radius:13px}.rec strong{display:block;margin-bottom:4px}.rec span{font-size:14px;color:#52627a}.fine{font-size:13px;color:#66748a;margin-top:23px}.factorlist{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;margin-top:14px}.factor{border-bottom:1px solid var(--line);padding:9px 0;display:flex;justify-content:space-between;gap:10px;font-size:13px}.factor b{font-weight:800;white-space:nowrap}.footer{text-align:center;color:#8490a0;font-size:12px;margin-top:28px}@media(max-width:600px){.wrap{padding:21px 14px 40px}.top{margin-bottom:27px}.pill{font-size:10px}.panel{border-radius:18px}.resultbox{display:block;text-align:center}.scorecircle{margin:0 auto 16px}.factorlist{grid-template-columns:1fr}.nav .btn{flex:1}.hero p{font-size:15px}}
+
+.ai-panel{margin-top:26px;padding:20px;border:1px solid #ccdaf4;border-radius:17px;background:#f5f8ff}
+.ai-panel h3{margin:0 0 8px;font-size:21px}.ai-panel p{font-size:14px;color:var(--muted);margin:6px 0 14px}
+.consent{display:flex;align-items:flex-start;gap:11px;font-size:14px;color:var(--ink);margin:15px 0}
+.consent input{margin-top:5px;width:18px;height:18px;accent-color:var(--blue);flex-shrink:0}
+.ai-response{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:15px;font-size:14px;min-height:52px}
+.ai-status{font-size:13px;color:var(--muted);margin-top:10px}
 </style>
 </head>
 <body>
 <main class="wrap">
-<header class="top"><div class="logo"><span class="logoicon" aria-hidden="true">♥</span> CardioCheck</div><span class="pill">100% LOCAL · FĂRĂ API</span></header>
+<header class="top"><div class="logo"><span class="logoicon" aria-hidden="true">♥</span> CardioCheck</div><span class="pill">SCOR LOCAL · RECOMANDĂRI AI OPȚIONALE</span></header>
 <div class="hero"><h1>Înțelege mai bine <em>factorii de risc cardiovascular.</em></h1><p>Răspunde la 10 întrebări și primește un index educativ al factorilor de risc, împreună cu recomandări practice adaptate răspunsurilor tale.</p></div>
 <section class="panel" id="quiz" aria-label="Chestionar cardiovascular"><div class="progresshead"><span id="step">Întrebarea 1 din 10</span><span id="percent">10%</span></div><div class="progress" aria-hidden="true"><div id="bar"></div></div><div class="tag" id="category">Date generale</div><h2 class="question" id="question"></h2><p class="hint" id="hint"></p><div class="options" id="options" role="group" aria-label="Variante de răspuns"></div><div class="nav"><button class="btn secondary" id="back" type="button">← Înapoi</button><button class="btn primary" id="next" type="button" disabled>Continuă →</button></div></section>
-<section class="panel hidden" id="results" aria-live="polite"><span class="tag">Rezultatul evaluării</span><h2 style="font-size:31px;letter-spacing:-.8px;margin:9px 0">Profilul factorilor de risc</h2><p class="hint">Scor orientativ bazat pe răspunsurile oferite, nu o estimare clinică a riscului cardiovascular.</p><div id="resultbox" class="resultbox"><div class="scorecircle"><strong id="score">0</strong><small>din 30 puncte</small></div><div><div class="eyebrow">Nivelul indexului educativ</div><h2 id="riskname"></h2><p id="risktext"></p></div></div><h3 class="sectiontitle">Recomandări pentru tine</h3><p class="hint">Selectate automat în browser în funcție de răspunsurile tale, fără inteligență artificială.</p><div id="recommendations" class="recommendations"></div><h3 class="sectiontitle">Cum a fost calculat scorul</h3><p class="hint">Fiecare răspuns valorează între 0 și 3 puncte. Totalul este un indicator simplificat, creat pentru demonstrație: 0–8 scăzut, 9–17 moderat, 18–30 ridicat. Nu este validat medical.</p><div id="factorlist" class="factorlist"></div><div class="nav"><button class="btn secondary" id="edit" type="button">← Modifică răspunsurile</button><button class="btn primary" id="restart" type="button">Reia evaluarea ↻</button></div></section>
+<section class="panel hidden" id="results" aria-live="polite"><span class="tag">Rezultatul evaluării</span><h2 style="font-size:31px;letter-spacing:-.8px;margin:9px 0">Profilul factorilor de risc</h2><p class="hint">Scor orientativ bazat pe răspunsurile oferite, nu o estimare clinică a riscului cardiovascular.</p><div id="resultbox" class="resultbox"><div class="scorecircle"><strong id="score">0</strong><small>din 30 puncte</small></div><div><div class="eyebrow">Nivelul indexului educativ</div><h2 id="riskname"></h2><p id="risktext"></p></div></div><h3 class="sectiontitle">Recomandări pentru tine</h3><p class="hint">Selectate automat în browser în funcție de răspunsurile tale, fără inteligență artificială.</p><div id="recommendations" class="recommendations"></div><section class="ai-panel" aria-labelledby="ai-title"><h3 id="ai-title">Recomandări personalizate cu GPT (opțional)</h3><p>Scorul rămâne calculat local. Numai dacă alegi să continui, cele 10 răspunsuri vor fi trimise prin Cloudflare Worker către OpenAI pentru recomandări educative. Nu introduce informații de identificare; nu trimitem nume sau adrese.</p><label class="consent"><input type="checkbox" id="ai-consent"><span>Înțeleg și sunt de acord cu trimiterea răspunsurilor mele despre sănătate către serviciul OpenAI pentru generarea recomandărilor. Pot folosi în continuare recomandările locale fără să accept.</span></label><button class="btn primary" id="ai-generate" type="button" disabled>Generează recomandări cu AI</button><button class="btn secondary hidden" id="ai-cancel" type="button">Oprește generarea</button><div id="ai-status" class="ai-status" role="status" aria-live="polite"></div><div id="ai-response" class="ai-response hidden" aria-live="polite"></div><p>Recomandările GPT nu constituie diagnostic sau indicații de tratament. În caz de simptome alarmante, solicită asistență medicală.</p></section><h3 class="sectiontitle">Cum a fost calculat scorul</h3><p class="hint">Fiecare răspuns valorează între 0 și 3 puncte. Totalul este un indicator simplificat, creat pentru demonstrație: 0–8 scăzut, 9–17 moderat, 18–30 ridicat. Nu este validat medical.</p><div id="factorlist" class="factorlist"></div><div class="nav"><button class="btn secondary" id="edit" type="button">← Modifică răspunsurile</button><button class="btn primary" id="restart" type="button">Reia evaluarea ↻</button></div></section>
 <aside class="note" role="note"><span aria-hidden="true">⚠️</span><div><strong>Important — instrument educativ, nu consultație medicală.</strong> Acest chestionar nu diagnostichează boli și nu estimează riscul real de infarct sau AVC. Nu folosi rezultatul pentru a decide tratamente sau pentru a amâna consultul medical. Dacă ai durere toracică, dificultăți de respirație importante sau semne de AVC, sună la 112.</div></aside>
-<div class="footer">Datele rămân exclusiv în această pagină, pe durata sesiunii. Nicio informație nu este transmisă ori salvată.</div>
+<div class="footer">Scorul și recomandările locale sunt calculate în browser și nu sunt stocate. Dacă soliciți recomandări AI și îți dai acordul, cele 10 răspunsuri sunt transmise către Cloudflare și OpenAI pentru procesare.</div>
 </main>
 <script>
 'use strict';
-// Viitoare integrare (DEZACTIVATĂ): Cloudflare Worker -> OpenAI API.
-// Pentru versiunea actuală nu există cereri de rețea și nu se folosește cheia API.
+// Integrarea AI se activează numai la cererea explicită a utilizatorului, după acord.
+// Cheia OpenAI este păstrată ca Secret în Cloudflare Worker, nu în acest fișier.
 const FUTURE_WORKER_URL = 'https://cardioproxy.mihaibota64.workers.dev/';
 const questions = [
  {key:'age',category:'Date generale',title:'Care este grupa ta de vârstă?',hint:'Vârsta influențează riscul cardiovascular, dar nu îl determină singură.',options:[['Sub 35 de ani',0],['35–44 de ani',1],['45–59 de ani',2],['60 de ani sau peste',3]]},
@@ -41,7 +48,98 @@ function render(){let q=questions[position];$('step').textContent=`Întrebarea $
 function addRecommendation(title,body){let el=document.createElement('div');el.className='rec';let t=document.createElement('strong');t.textContent=title;let b=document.createElement('span');b.textContent=body;el.append(t,b);$('recommendations').append(el);}
 // Reguli locale: recomandările NU sunt generate de AI și nu reprezintă sfaturi medicale individuale.
 function localRecommendations(){let a=answers;let recommendations=[];const add=(title,body)=>recommendations.push({title,body});if(a.bp>=2&&a.bp!==4)add('Discută valorile tensiunii cu un medic','Măsurătorile repetate crescute merită evaluate medical. Dacă tensiunea este ≥180/120 mmHg, repetă măsurarea după un minut și solicită imediat îndrumare medicală; cu simptome severe, sună la 112.');else if(a.bp===4)add('Verifică tensiunea arterială','Fă măsurători corecte, în repaus, și discută valorile cu medicul dacă sunt crescute.');if(a.chol===2)add('Revizuiește profilul lipidic','Discută cu medicul rezultatele analizelor și tratamentul existent; nu modifica medicația fără recomandare.');else if(a.chol===3)add('Află valorile colesterolului','Întreabă medicul când este potrivit să efectuezi o analiză a profilului lipidic.');if(a.smoke>=2)add('Renunțarea la fumat contează','Caută sprijin pentru renunțarea la tutun; medicul te poate ajuta cu o strategie și opțiuni de tratament.');if(a.diab===2)add('Gestionează diabetul împreună cu echipa medicală','Controlul glicemiei, tensiunii și colesterolului este important. Respectă schema personală stabilită cu medicul.');else if(a.diab===3)add('Discută despre testarea glicemiei','La următorul consult, verifică dacă sunt indicate analize pentru glicemie sau HbA1c.');if(a.activity>=2)add('Crește mișcarea treptat','Începe cu plimbări scurte și crește progresiv, potrivit stării de sănătate. Un obiectiv general pentru adulți este 150 minute/săptămână de mișcare moderată.');if(a.bmi>=2&&a.bmi!==4)add('Discută obiective realiste de sănătate','IMC singur nu descrie sănătatea. Un profesionist poate evalua circumferința abdominală și alți indicatori relevanți.');if(a.stress>=2)add('Protejează timpul pentru recuperare','Încearcă pauze regulate, tehnici de relaxare și sprijin dacă stresul persistă.');if(a.family===1||a.family===2)add('Menționează istoricul familial','Spune medicului ce boli cardiovasculare au existat în familie și, dacă știi, vârsta la care au apărut.');if(a.habits>=1)add('Ajustează alimentația și somnul','Adaugă mai multe legume, fructe și alimente cât mai puțin procesate; construiește o rutină de somn regulată.');if(a.age>=2)add('Planifică evaluări preventive','Discută cu medicul despre monitorizarea tensiunii, a lipidelor și a glicemiei, potrivit vârstei și istoricului tău.');if(recommendations.length===0)add('Menține obiceiurile favorabile','Continuă mișcarea, alimentația echilibrată, evitarea fumatului și controalele preventive adecvate.');add('Interpretează rezultatul cu prudență','Acest index educativ nu poate confirma sau exclude o boală. Dacă ai simptome sau îngrijorări, cere o evaluare medicală.');return recommendations;}
-function showResults(){let total=questions.reduce((s,q)=>s+q.options[answers[q.key]][1],0);let level=total<=8?'low':total<=17?'medium':'high';let names={low:'Index scăzut',medium:'Index moderat',high:'Index ridicat'};let descriptions={low:'Ai selectat relativ puțini factori nefavorabili în acest chestionar. Acest lucru NU garantează un risc medical scăzut.',medium:'Sunt prezenți mai mulți factori care merită atenție și, după caz, discutați cu un medic.',high:'Ai selectat mai mulți factori nefavorabili. Programează o evaluare medicală pentru o apreciere clinică reală.'};$('score').textContent=total;$('riskname').textContent=names[level];$('risktext').textContent=descriptions[level];$('resultbox').className='resultbox '+level;$('recommendations').replaceChildren();localRecommendations().forEach(r=>addRecommendation(r.title,r.body));$('factorlist').replaceChildren();questions.forEach(q=>{let points=q.options[answers[q.key]][1];let row=document.createElement('div');row.className='factor';let label=document.createElement('span');label.textContent=q.title;let val=document.createElement('b');val.textContent=`${points} / 3`;row.append(label,val);$('factorlist').append(row);});$('quiz').classList.add('hidden');$('results').classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'});}
-$('back').onclick=()=>{if(position>0){position--;render();}};$('next').onclick=()=>{if(answers[questions[position].key]===undefined)return;if(position===questions.length-1)showResults();else{position++;render();}};$('edit').onclick=()=>{$('results').classList.add('hidden');$('quiz').classList.remove('hidden');position=0;render();window.scrollTo({top:0,behavior:'smooth'});};$('restart').onclick=()=>{answers={};position=0;$('results').classList.add('hidden');$('quiz').classList.remove('hidden');render();window.scrollTo({top:0,behavior:'smooth'});};render();
+function showResults(){resetAI();let total=questions.reduce((s,q)=>s+q.options[answers[q.key]][1],0);let level=total<=8?'low':total<=17?'medium':'high';let names={low:'Index scăzut',medium:'Index moderat',high:'Index ridicat'};let descriptions={low:'Ai selectat relativ puțini factori nefavorabili în acest chestionar. Acest lucru NU garantează un risc medical scăzut.',medium:'Sunt prezenți mai mulți factori care merită atenție și, după caz, discutați cu un medic.',high:'Ai selectat mai mulți factori nefavorabili. Programează o evaluare medicală pentru o apreciere clinică reală.'};$('score').textContent=total;$('riskname').textContent=names[level];$('risktext').textContent=descriptions[level];$('resultbox').className='resultbox '+level;$('recommendations').replaceChildren();localRecommendations().forEach(r=>addRecommendation(r.title,r.body));$('factorlist').replaceChildren();questions.forEach(q=>{let points=q.options[answers[q.key]][1];let row=document.createElement('div');row.className='factor';let label=document.createElement('span');label.textContent=q.title;let val=document.createElement('b');val.textContent=`${points} / 3`;row.append(label,val);$('factorlist').append(row);});$('quiz').classList.add('hidden');$('results').classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'});}
+// Conectare la Worker: streaming SSE compatibil cu Chat Completions API.
+let aiController = null;
+function resetAI(){
+  if(aiController){aiController.abort(); aiController=null;}
+  $('ai-consent').checked=false;
+  $('ai-generate').disabled=true;
+  $('ai-generate').textContent='Generează recomandări cu AI';
+  $('ai-cancel').classList.add('hidden');
+  $('ai-response').textContent='';
+  $('ai-response').classList.add('hidden');
+  $('ai-status').textContent='';
+}
+$('ai-consent').addEventListener('change', ()=>{
+  if(!aiController) $('ai-generate').disabled=!$('ai-consent').checked;
+});
+$('ai-cancel').addEventListener('click', ()=>{if(aiController)aiController.abort();});
+$('ai-generate').addEventListener('click', async ()=>{
+  if(!$('ai-consent').checked || aiController)return;
+  aiController=new AbortController();
+  const controller=aiController;
+  $('ai-generate').disabled=true;
+  $('ai-generate').textContent='Se generează…';
+  $('ai-cancel').classList.remove('hidden');
+  $('ai-response').textContent='';
+  $('ai-response').classList.remove('hidden');
+  $('ai-status').textContent='Se așteaptă răspunsul OpenAI…';
+  try{
+    // Trimitem numai etichetele celor 10 răspunsuri, fără nume și fără scor inventat.
+    const selected=questions.map(q=>`${q.key}: ${q.options[answers[q.key]][0]}`);
+    const response=await fetch(FUTURE_WORKER_URL,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({answers:selected}),
+      signal:controller.signal
+    });
+    if(!response.ok)throw new Error(`Worker HTTP ${response.status}`);
+    if(!response.body)throw new Error('Streaming indisponibil în browser');
+    const reader=response.body.getReader();
+    const decoder=new TextDecoder();
+    let buffer='';
+    let assembled='';
+    let finished=false;
+    function parseEvent(block){
+      for(const line of block.split('\n')){
+        if(!line.startsWith('data:'))continue;
+        const raw=line.slice(5).trimStart();
+        if(raw==='[DONE]'){finished=true;return;}
+        if(!raw)continue;
+        let data;
+        try{data=JSON.parse(raw);}catch{continue;}
+        if(data.error)throw new Error('Eroare transmisă de serviciul AI');
+        const chunk=data.choices?.[0]?.delta?.content;
+        if(typeof chunk==='string'&&chunk){
+          assembled+=chunk;
+          // Text simplu, fără HTML executabil provenit din răspunsul AI.
+          $('ai-response').textContent=assembled;
+          $('ai-status').textContent='Recomandările se afișează în timp real…';
+        }
+      }
+    }
+    while(true){
+      const {done,value}=await reader.read();
+      if(done)break;
+      buffer+=decoder.decode(value,{stream:true}).replace(/\r\n/g,'\n');
+      let boundary;
+      while((boundary=buffer.indexOf('\n\n'))>=0){
+        parseEvent(buffer.slice(0,boundary));
+        buffer=buffer.slice(boundary+2);
+      }
+      if(finished)break;
+    }
+    buffer+=decoder.decode();
+    if(buffer.trim()&&!finished)parseEvent(buffer);
+    if(!assembled.trim())throw new Error('Niciun text primit de la OpenAI');
+    $('ai-status').textContent='Recomandările AI au fost generate.';
+  }catch(err){
+    if(err.name==='AbortError'){
+      $('ai-status').textContent='Generarea a fost oprită.';
+    }else{
+      console.error('CardioCheck AI:',err);
+      $('ai-status').textContent='Nu am putut obține recomandările AI. Verifică Worker-ul și cheia API; recomandările locale de mai sus rămân disponibile.';
+    }
+  }finally{
+    if(aiController===controller){
+      aiController=null;
+      $('ai-generate').disabled=!$('ai-consent').checked;
+      $('ai-generate').textContent='Generează din nou';
+      $('ai-cancel').classList.add('hidden');
+    }
+  }
+});
+$('back').onclick=()=>{if(position>0){position--;render();}};$('next').onclick=()=>{if(answers[questions[position].key]===undefined)return;if(position===questions.length-1)showResults();else{position++;render();}};$('edit').onclick=()=>{resetAI();$('results').classList.add('hidden');$('quiz').classList.remove('hidden');position=0;render();window.scrollTo({top:0,behavior:'smooth'});};$('restart').onclick=()=>{resetAI();answers={};position=0;$('results').classList.add('hidden');$('quiz').classList.remove('hidden');render();window.scrollTo({top:0,behavior:'smooth'});};render();
 </script>
 </body></html>
